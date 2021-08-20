@@ -52,7 +52,16 @@ class CustomVouchers extends Vouchers
 	if($model == null){
 	$model_key = 0;
 	$model_class = 'GLOBAL';
-	}else{
+	}
+	else if($model=="GLOBAL"){
+	$model_key = 1;
+	$model_class = 'GLOBAL';
+	}
+	else if($model=="GLOBAL_MULTIUSE"){
+	$model_key = 2;
+	$model_class = 'GLOBAL_MULTIUSE';
+	}
+	else{
 	$model_key = $model->getKey();
 	$model_class = $model->getMorphClass();
 	}
