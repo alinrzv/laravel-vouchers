@@ -3,7 +3,6 @@
     "description": "Allow users to redeem vouchers that are bound to models..",
     "keywords": [
         "beyondcode",
-        "alinrzv",
         "laravel-vouchers"
     ],
     "homepage": "https://github.com/alinrzv/laravel-vouchers",
