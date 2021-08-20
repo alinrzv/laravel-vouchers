@@ -45,7 +45,7 @@ class CustomVouchers extends Vouchers
      * @param null $expires_at
      * @return array
      */
-    public function create(Model $model=null, int $amount = 1, array $data = [], $expires_at = null)
+    public function create($model = null, int $amount = 1, array $data = [], $expires_at = null)
     {
         $vouchers = [];
 	

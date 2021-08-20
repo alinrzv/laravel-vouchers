@@ -26,16 +26,15 @@ trait CanRedeemVouchers
 	#if ($voucher->users()->wherePivot('user_id', $this->id)->exists()) 
 	
 	if($voucher->model_type == "GLOBAL_MULTIUSE"){
-	
 		if ($voucher->users()->wherePivot('user_id', $this->id)->exists()) {
 			throw VoucherAlreadyRedeemed::create($voucher);
 		}
-	
 	}
-	
-	# discount code only use once whatever user 
-        if ($voucher->users()->wherePivot('voucher_id', $voucher->id)->exists()) {
-            throw VoucherAlreadyRedeemed::create($voucher);
+	else {
+		# discount code only use once whatever user 
+	        if ($voucher->users()->wherePivot('voucher_id', $voucher->id)->exists()) {
+	            throw VoucherAlreadyRedeemed::create($voucher);
+	        }
         }
         
         if ($voucher->isExpired()) {
