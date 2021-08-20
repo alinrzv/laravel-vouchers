@@ -3,6 +3,7 @@
     "description": "Allow users to redeem vouchers that are bound to models..",
     "keywords": [
         "beyondcode",
+        "alinrzv",
         "laravel-vouchers"
     ],
     "homepage": "https://github.com/alinrzv/laravel-vouchers",
@@ -10,7 +11,7 @@
     "authors": [
         {
             "name": "Best Digital",
-            "email": "hidev@bestdigital.ro"
+            "email": "hidev@bestdigital.ro",
             "homepage": "https://bestdigital.ro",
             "role": "Developer"
         }
